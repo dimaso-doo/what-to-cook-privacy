@@ -19,23 +19,32 @@
 <body>
   <main>
     <h1>Privacy Policy</h1>
-    <p class="meta">What to Cook? · Effective August 5, 2026</p>
+    <p class="meta">What to Cook? · Updated August 12, 2026</p>
 
     <div class="card">
-      <strong>In short:</strong> What to Cook? works completely offline and does not collect, store, or share personal data.
+      <strong>In short:</strong> What to Cook? does not require an account, show ads, or use analytics. When you request AI cooking ideas, the selected ingredients and a random app-installation identifier are processed securely to generate suggestions and enforce a daily limit.
     </div>
 
     <h2>Information we collect</h2>
-    <p>What to Cook? does not collect personal information or user data. The app does not require an account and does not use analytics, advertising, tracking technologies, or third-party data collection services.</p>
+    <p>The app does not collect your name, email address, precise location, contacts, photos, advertising ID, or payment information. It does not require an account and does not use advertising or analytics SDKs.</p>
 
     <h2>How the app works</h2>
-    <p>Ingredient selections, recipe matching, recipe details, and cooking instructions are processed locally on your device. This information is not transmitted to Dimaso or to third parties.</p>
+    <p>The ingredient catalogue and saved recipes are provided through Supabase. When you ask for AI cooking ideas, the selected ingredient names are sent to our Supabase server function and OpenAI to generate the response. Do not enter personal information as an ingredient.</p>
+
+    <h2>Anonymous daily limits</h2>
+    <p>The app creates a random installation identifier on your device. Our server stores only a one-way hash of that identifier with the date and request count to enforce the daily AI quota. It is not linked to an account, advertising identifier, or your identity. Usage records are retained for no longer than 32 days.</p>
+
+    <h2>AI recipe cache</h2>
+    <p>Generated recipe suggestions may be cached in Supabase for up to 90 days so the same ingredient combination can be served without another AI request. Cached entries contain ingredient combinations and generated recipe content, not the installation identifier.</p>
 
     <h2>Data sharing</h2>
-    <p>We do not sell, share, or transfer user data because the app does not collect user data.</p>
+    <p>We do not sell personal data. Supabase processes requests and stores the recipe catalogue, cache, and anonymous quota records on our behalf. OpenAI processes selected ingredient names to generate cooking ideas. These providers process data to operate the requested feature.</p>
+
+    <h2>Security and your choices</h2>
+    <p>OpenAI credentials remain on the server and are never included in the Android app. You can avoid AI processing by not requesting an AI suggestion. Uninstalling the app removes its local random installation identifier.</p>
 
     <h2>Children's privacy</h2>
-    <p>The app does not knowingly collect personal information from children or any other users.</p>
+    <p>The app is not designed to collect personal information from children or any other users. Users should not enter personal information into the ingredient field.</p>
 
     <h2>Changes to this policy</h2>
     <p>If the app's privacy practices change, this policy will be updated before the changes take effect.</p>
